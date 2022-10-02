@@ -1,8 +1,7 @@
 // Demo code for exercise
 
-// @ts-check
 
-async () => {
+(async () => {
   const myCart = [];
   const products = [];
   const limit = 2;
@@ -38,4 +37,4 @@ async () => {
   };
   // const rta = person +  limit;
   // console.log(rta);
-};
+});
