@@ -1,4 +1,5 @@
-//MOdular programming  uwu!!
+//MOdular programming
+//The one that executes!
 import {addProduct, calcStock, products} from "./product.service";
 
 addProduct({

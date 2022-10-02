@@ -1,4 +1,4 @@
-//Modelado de datos va aqui uwu
+//MData Model goes here!
 
 //This can be eexported, when we use the keyword export, that allows us to use it without
 //the autoinvoked function with an implicit scope
