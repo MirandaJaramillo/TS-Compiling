@@ -23,5 +23,8 @@ const data = [
   }
 ];
 //Whith _. we can use the library
+// invoking the lib in gruop by
 const res = _.groupBy(data,(item) => item.role);
 console.log(res)
+
+
