@@ -17,7 +17,8 @@ const data = [
   {
     username:'santi',
     role:'seller'
-  }, {
+  },
+  {
     username:'miranda',
     role:'customer'
   }
