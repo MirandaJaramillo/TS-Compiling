@@ -18,3 +18,10 @@ let user2: [string,number, boolean];
 user2 = ["Algarabia", 200, false];
 //Deconstruction of the duple to assign values
 const [username, age] = user2;
+//console log the named constants
+console.log(username);
+console.log(age);
+
+
+
+//The UseState Hook uses dupes
