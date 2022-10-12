@@ -17,3 +17,5 @@ export interface Product extends BaseModel {
   isNew:boolean;
   tags: string[];
 };
+
+
