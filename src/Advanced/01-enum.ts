@@ -3,7 +3,7 @@
 
 // enum --> specify descriptive constants and associate
 
-enum ROLES {
+export enum ROLES {
   //ADMIN ->
   ADMIN = "admin",
   SELLER = "seller",
@@ -11,7 +11,7 @@ enum ROLES {
 
 }
   // Alias Type here
-  type User = {
+ export type User = {
     username: string;
     role: ROLES;
   }
