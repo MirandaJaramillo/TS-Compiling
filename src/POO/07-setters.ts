@@ -4,7 +4,7 @@ export class MyDate {
   constructor(
 
     public year: number = 1993,
-    public month: number = 7,
+    public _month: number = 7,
     private _day:number = 9){}
 
   printFormat(): string {
@@ -37,21 +37,28 @@ export class MyDate {
     if (this.year % 100 === 0) return false;
     return this.year % 4 === 0;
   }
+
+  get month(){
+    return this._month
+  }
+/// SETTERS /// SETTERS /// SETTERS /// SETTERS /// SETTERS /// SETTERS /// SETTERS /// SETTERS /// SETTERS /// SETTERS
+/// SETTERS /// SETTERS /// SETTERS /// SETTERS /// SETTERS /// SETTERS /// SETTERS /// SETTERS /// SETTERS /// SETTERS
+// SETTER CANNOT RETURN ANYTHING JUST MODIFY
+  set month(newVal:number){
+    if(newVal >= 1 && newVal <= 12){
+      this._month = newVal;
+    } else{
+      throw new Error ("month out of range");
+    }
+  }
 };
 
 
-const myDate = new MyDate(1993,7,9);
+const myDate = new MyDate(1993, 7, 10);
 console.log(myDate.printFormat());
-//console.log(myDate.getDay());
+myDate.month = 4;
+console.log('run', myDate.month);
+myDate.month = 8;
+console.log('esto si debe aparecer', myDate.month);
 
-console.log(myDate.day);
-console.log(myDate.isLeapYear)
 
-const myDate2 = new MyDate(2000,7,9);
-console.log(myDate2.isLeapYear)
-
-const myDate3 = new MyDate(2001,7,9);
-console.log(myDate3.isLeapYear)
-
-const myDate4 = new MyDate(2004,7,9);
-console.log(myDate4.isLeapYear)
