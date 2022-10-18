@@ -21,8 +21,6 @@ import { Product } from "./models/product.model";
 
   }
 
-
-
 // with :Promise<Product[] we get that is an array of products instead of any
 // and we can map!!!
   const products = await getProductsAsync2();
